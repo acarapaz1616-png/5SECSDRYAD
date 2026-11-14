@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Rescate</title>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Control de Rescate y Adopción</h1>
+        <p>Registro de un nuevo animal rescatado</p>
+    </header>
+
+    <!-- Menú -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar rescate</a></li>
+            <li><a href="rescates.html">Ver rescates</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <section>
+            <h2>Formulario de registro</h2>
+
+            <form action="#" method="post">
+
+                <!-- Campo de texto -->
+                <div>
+                    <label for="nombre">
+                        Nombre provisional o título del caso:
+                    </label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <br>
+
+                <!-- Lista desplegable -->
+                <div>
+                    <label for="categoria">Categoría del animal:</label>
+
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Seleccione una categoría</option>
+                        <option value="perro">Perros</option>
+                        <option value="gato">Gatos</option>
+                        <option value="fauna">Fauna Silvestre</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <!-- Botones de urgencia -->
+                <fieldset>
+                    <legend>Nivel de urgencia médica:</legend>
+
+                    <input type="radio" id="alta" name="urgencia" value="alta">
+                    <label for="alta">Alta</label>
+
+                    <input type="radio" id="media" name="urgencia" value="media">
+                    <label for="media">Media</label>
+
+                    <input type="radio" id="baja" name="urgencia" value="baja">
+                    <label for="baja">Baja</label>
+                </fieldset>
+
+                <br>
+
+                <!-- Área de descripción -->
+                <div>
+                    <label for="descripcion">
+                        Descripción del estado del animal:
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="descripcion"
+                        name="descripcion"
+                        rows="6"
+                        cols="50"
+                        placeholder="Describa el estado en que fue encontrado el animal..."
+                        required>
+                    </textarea>
+                </div>
+
+                <br>
+
+                <!-- Botones del formulario -->
+                <button type="submit">Registrar rescate</button>
+                <button type="reset">Limpiar formulario</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Control de Rescate y Adopción - Universidad Técnica de Manabí</p>
+        <p>Contacto: refugio@ejemplo.com</p>
+    </footer>
+
+</body>
+
+</html>
